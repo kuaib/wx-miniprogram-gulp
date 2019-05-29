@@ -1,4 +1,4 @@
-## wx-miniprogram-boilerplate
+## wx-miniprogram-gulp
 >基于Gulp构建的微信小程序开发工作流
 
 ### 适用场景
@@ -29,11 +29,11 @@ $ npm install --global gulp-cli
 ```
 ##### 1. 下载代码
 ```
-$ git clone https://github.com/YangQiGitHub/wx-miniprogram-boilerplate.git
+$ git clone https://github.com/YangQiGitHub/wx-miniprogram-gulp.git
 ```
 ##### 2. 进目录，安装依赖
 ```
-$ cd wx-miniprogram-boilerplate && npm install
+$ cd wx-miniprogram-gulp && npm install
 ```
 ##### 3. 编译代码，生成dist目录，使用开发者工具打开dist目录
 ```
@@ -55,10 +55,10 @@ $ npm run build （生产环境打包）
 
 ### 工程结构
 ```
-wx-miniprogram-boilerplate
+wx-miniprogram-gulp
 ├── dist         // 编译后目录
 ├── node_modules // 项目依赖
-├── src 
+├── src
 │    ├── components // 微信小程序自定义组件
 │    ├── env        // 请求域名配置
 │    ├── images     // 页面中的图片和icon
@@ -98,7 +98,7 @@ Tasks:
 
   auto             自动根据模板创建page,template或者component(小程序自定义组件)
 
-gulp auto 
+gulp auto
 
 选项：
   -s, --src        copy的模板                     [字符串] [默认值: "_template"]
@@ -142,3 +142,4 @@ gulp auto
 
 ### 最后
 将持续更新，如果有新的建议，欢迎创建Issue或发送PR，感谢你的支持和贡献。
+https://www.jianshu.com/p/11cc03dd1917

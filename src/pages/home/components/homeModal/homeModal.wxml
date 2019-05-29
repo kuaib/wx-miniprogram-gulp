@@ -1,0 +1,23 @@
+<!--指示引导层-->
+<view class="home-modal" hidden="{{!showWelModal&&!showGuidModal}}">
+    <view wx:if="{{showWelModal}}" class="pos-center welcome-modal">
+        <image mode="widthFix" src="../../../../images/guid/welcome.png" class="welcome-img"></image>
+        <view class="words" bindtap="hideWel">I am coming !</view>
+    </view>
+
+    <view wx:if="{{showGuidModal}}" class="pos-center guid-modal">
+        <view class="modal-content">
+            <view class="title">
+                <view class="title-one">你喜欢的汽车内容都在这，</view>
+                <view class="title-two">打开推送可以第一时间看到好内容</view>
+            </view>
+            <view class="content">
+                <view class="guid-item" wx:for="{{guidItem}}" wx:key="index">{{item}}</view>
+            </view>
+            <view class="view-btn">打开推送</view>
+        </view>
+        <view class="close-btn pos-horizontal" bindtap="hideGuid">
+            <image mode="widthFix" src="../../../../images/icons/closeBtn.png"></image>
+        </view>
+    </view>
+</view>

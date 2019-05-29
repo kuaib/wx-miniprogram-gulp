@@ -1,0 +1,12 @@
+<view class="wrapper-home">
+    <view class="home-main">
+        首页
+        <view>4324</view>
+    </view>
+
+    <!--引导层-->
+    <home-modal></home-modal>
+
+    <!--底部导航-->
+    <!--<footer urlState="{{'/'+urlState}}"></footer>-->
+</view>

@@ -1,0 +1,81 @@
+@import "../../../../styles/index";
+.home-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: @rgba8;
+    text-align: center;
+
+    .welcome-modal {
+        .welcome-img {
+            width: 200px;
+        }
+        .words {
+            color: #fff;
+            padding: 10px 0;
+            width: 200px;
+            border: 1px solid #fff;
+            text-align: center;
+            border-radius: 30px;
+            margin: 10px auto 10px;
+        }
+    }
+
+    .guid-modal {
+        width: 80%;
+        .modal-content {
+            background: #fff;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            .title {
+                font-size: 16px;
+                font-weight: 700;
+                padding: 20px 10px;
+                line-height: 25px;
+            }
+            .content {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .guid-item {
+                    padding: 5px 0 5px 45px;
+                    width: 50%;
+                    text-align: left;
+                    position: relative;
+                    &:before {
+                        content: "";
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: #ccc;
+                    }
+                }
+            }
+            .view-btn {
+                width: 85%;
+                margin: 0 auto;
+                padding: 8px;
+                font-size: 15px;
+                color: #fff;
+                border-radius: 20px;
+                margin-top: 10px;
+                text-align: center;
+                background: linear-gradient(to right, #61b4f8, #4571f6);
+            }
+        }
+        .close-btn {
+            width: 30px;
+            bottom: -55px;
+            image {
+                width: 100%;
+            }
+
+        }
+    }
+}

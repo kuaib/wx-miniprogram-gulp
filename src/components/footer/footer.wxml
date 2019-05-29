@@ -1,0 +1,12 @@
+<view class="footer-wrapper">
+    <navigator class="footer-item" wx:for="{{navList}}" wx:key="{{item.linkUrl}}" url="{{item.linkUrl}}">
+        <view class="item-state" wx:if="{{item.linkUrl===urlState}}">
+            <image src="{{item.actImgUrl}}" mode="widthFix"></image>
+            <text class="act">{{item.text}}</text>
+        </view>
+        <view class="item-state" wx:else>
+            <image src="{{item.imgUrl}}" mode="widthFix"></image>
+            <text>{{item.text}}</text>
+        </view>
+    </navigator>
+</view>

@@ -1,0 +1,4 @@
+<view>
+    个人中心
+    <footer urlState="{{urlState}}"></footer>
+</view>

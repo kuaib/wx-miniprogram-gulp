@@ -1,32 +1,37 @@
 Component({
-  behaviors: [],
+    behaviors: [],
 
-  properties: {
-    num: {
-      type: Number,
-      value: 0
-    }
-  },
-  data: {
-    componentNum: 100
-  },
-
-  // 生命周期函数
-  created() {},
-  attached() {},
-  ready() {},
-  moved() {},
-  detached() {},
-
-  methods: {
-    clickInTemplate() {
-      this.setData({ num: this.data.num + 1 });
+    properties: {
+        num: {
+            type: Number,
+            value: 0
+        }
     },
-    triggerPageEvent() {
-      this.triggerEvent('addNum');
+    data: {
+        componentNum: 100
     },
-    addComponentNum() {
-      this.setData({ componentNum: this.data.componentNum + 1 });
+
+    // 生命周期函数
+    created() {
+    },
+    attached() {
+    },
+    ready() {
+    },
+    moved() {
+    },
+    detached() {
+    },
+
+    methods: {
+        clickInTemplate() {
+            this.setData({num: this.data.num + 1});
+        },
+        triggerPageEvent() {
+            this.triggerEvent('addNum');
+        },
+        addComponentNum() {
+            this.setData({componentNum: this.data.componentNum + 1});
+        }
     }
-  }
 });
